@@ -2,32 +2,57 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>疫战欢乐的事</title>
+		<title></title>
 		<style type="text/css">
 			html,body{
 				height: 100%;
 				margin:0;
 			}
 			body{
-				background-image: url(https://img95.699pic.com/element/40167/8202.png_300.png);
-				background-repeat: no-repeat;
-				background-position:50% 50%;
-				background-attachment:fixed;
-				background-a
-				display:flex;
-				align-items: center;
-				justify-content: center;
-			}
-			.sd{text-align: center;
 				
 			}
+			.sd{text-align: center;
+			 position:relative;
+				
+			}
+			.sr{
+				margin:50px auto;
+				width:100px;
+				height:100px;
+				border:1px solid;
+				border-radius:10px 20px/30px;
+			}
+			p. sr::before{
+				height:0;
+				width:0;
+				top:100%;
+				border:solid transparent;
+				border-color: #000000;
+				border-right: #000000 36px coral;
+				left:50%;
+				margin-left:0px;
+			}
+			p .sr::after{
+				content:attr(title);
+				word-break: keep-all;
+				padding:2px 16px;
+				background:#000000;
+				color:#fff;
+				position:absolute;
+				left:calc(100%+10px);
+				border-radius:8px;
+				transition:all 1s;
+				opacity:0;
+			}
+			p .sr:hover::after{
+				opacity:1;
+				transition:left 2s ;
+				transition-duration: 2s;
+				margin-left:-60px;
+			}
 			#ei{width=100% ;height=500 ;background-color: aqua;margin-left:50px;margin-right=50px;padding: 0px;
-			
-			
 			}
-			#wt{
-				font-size: 20px ; color:red ;
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -35,10 +60,12 @@
 		<div id=oi>
 			</div>
 		<div id=ei>
-			<p class= sd > 在疫情期间我们的人 <strong class=wt>会是什么样的呢？</strong></p>  
-			<p class= "sd">让我们一起来看看疫情中的人们</p>
+			
+			<p class= sd>让我们<span title="一起来" class="sr">一起来看看人们</p>
 			
 			</div>
-			
+			<div id=sr>
+				
+				</div>
 	</body>
 </html>
